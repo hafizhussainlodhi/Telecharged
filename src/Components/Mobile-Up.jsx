@@ -34,10 +34,8 @@ const MobileUP = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {products.map((item, index) => (
-            // Card ki height h-96 se barha di hai
             <div key={index} className="bg-gray-300 p-6 rounded-xl flex flex-col justify-between shadow-md h-96">
               
-              {/* Image size fix kar diya hai (h-40) aur object-contain se stretch nahi hogi */}
               <div className="flex justify-center items-center h-40">
                 <img 
                   src={item.img} 
@@ -46,10 +44,10 @@ const MobileUP = () => {
                 />
               </div>
               
-              {/* Text Info */}
+              {/* Text Info - Changed to text-gray-900 */}
               <div className="w-full text-left mt-auto mb-4">
-                <p className="text-sm text-white font-medium">@telecharged</p>
-                <h3 className="text-lg font-bold text-white">{item.name}</h3>
+                <p className="text-sm text-gray-900 font-medium">@telecharged</p>
+                <h3 className="text-lg font-bold text-gray-900">{item.name}</h3>
               </div>
 
               {/* Button */}
